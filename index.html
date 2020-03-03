@@ -6,7 +6,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>Farfalla</title>
+  <title>Piccarsa</title>
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -18,10 +18,12 @@
   <meta name="og:image" content="https://live.mrf.io/statics/i/ps/imieianimali.it/wp-content/uploads/2018/04/memoria-elefante.jpg">
   
   
-  <script>
+  <script type="text/javascript">
 	$(document).ready(function(){
+		console.logger("sto modificando");
 		$("meta[name='og\\:image']").attr("content", "https://www.mille-animali.com/wp/wp-content/uploads/2017/05/farfalla-1024x758.jpg");
-	}
+		console.logger("modifica eseguita");
+	});
   </script>
   
   <link rel="icon" type="image/x-icon" href="http://coll.fondirigenti.it:4200/favicon.ico">
