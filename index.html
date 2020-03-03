@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>HTML Test 2</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="container">
+      <div class="always-show box">
+        This is always visible<br/>
+		document.documentElement.clientWidth: <span id="aw"></span><br/>
+		document.documentElement.clientHeight: <span id="ah"></span><br/>
+		window.innerWidth: <span id="ww"></span><br/>
+		window.innerHeight: <span id="wh"></span>
+      </div>
+      <div class="hidden ipv-shown box">
+        iPhone 6/7/8 Vertical
+      </div>
+      <div class="hidden ippv-shown box">
+        iPhone 6/7/8 Plus Vertical
+      </div>
+      <div class="hidden ipxv-shown box">
+        iPhone X Vertical
+      </div>
+    </div>
+	
+	<script>
+		document.getElementById("aw").innerHTML = document.documentElement.clientWidth;
+		document.getElementById("ah").innerHTML = document.documentElement.clientHeight;
+		document.getElementById("ww").innerHTML = window.innerWidth;
+		document.getElementById("wh").innerHTML = window.innerHeight;
+	</script>
+  </body>
+</html>
